@@ -32,6 +32,13 @@ or
 ```
 ### Memory Leaks Check
 
+```bash
+valgrind --leak-check=full --show-leak-kinds=all ./fractol mandelbrot
+valgrind --leak-check=full --show-leak-kinds=all ./fractol julia -0.7 0.27
+```
+
+Window will freeze, must wait.
+
 ### Norminette checks
 
 ```bash
@@ -57,12 +64,3 @@ Claude Code was used to suggest code optimizations, notably in looped per-pixel 
 It also assisted in building the Makefile.
 
 ---
-## TODO
-
-
-- Makefile checks 
-- norm complicance
-
-## Final Step
-
-Retrace entire program for defense
