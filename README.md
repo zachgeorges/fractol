@@ -14,9 +14,29 @@ The `fract-ol` project involves creating graphically beautiful fractals. The goa
 
 ### Compilation
 
+```bash
+make
+make clean
+make fclean
+make re
+```
+
 ### Usage
 
+```bash
+./fractol mandelbrot
+```
+or
+```bash
+./fractol julia <real> <imaginary>
+```
 ### Memory Leaks Check
+
+### Norminette checks
+
+```bash
+norminette $(find . -name "*.c" -o -name "*.h" | grep -v minilibx-linux)
+```
 
 ---
 
@@ -34,6 +54,7 @@ The `fract-ol` project involves creating graphically beautiful fractals. The goa
 ### AI usage
 
 Claude Code was used to suggest code optimizations, notably in looped per-pixel computing, as well as provide memory leak checking commands.
+It also assisted in building the Makefile.
 
 ---
 ## TODO
