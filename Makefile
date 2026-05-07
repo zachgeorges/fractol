@@ -12,6 +12,7 @@ OBJ     = $(SRC:.c=.o)
 all: $(NAME)
 
 $(MLX_DIR)/libmlx.a:
+	git submodule update --init
 	make -C $(MLX_DIR)
 
 $(NAME): $(OBJ) $(MLX_DIR)/libmlx.a
