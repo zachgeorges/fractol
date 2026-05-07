@@ -15,7 +15,7 @@ $(MLX_DIR)/libmlx.a:
 	git submodule update --init
 	make -C $(MLX_DIR)
 
-$(NAME): $(OBJ) $(MLX_DIR)/libmlx.a
+$(NAME): $(MLX_DIR)/libmlx.a $(OBJ)
 	$(CC) $(OBJ) $(MLX_FLAGS) -o $(NAME)
 
 %.o: %.c
