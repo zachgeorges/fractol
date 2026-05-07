@@ -6,7 +6,7 @@
 /*   By: zgeorges <zgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 15:23:57 by zgeorges          #+#    #+#             */
-/*   Updated: 2026/05/06 20:08:09 by zgeorges         ###   ########.fr       */
+/*   Updated: 2026/05/07 11:57:44 by zgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ void	render(t_fractal *fractal)
 		x = 0;
 		while (x < WIDTH)
 		{
-			z.r = map(x, 0, WIDTH, fractal->x_min, fractal->x_max);
-			z.i = map(y, 0, HEIGHT, fractal->y_min, fractal->y_max);
+			z.r = map(x, WIDTH, fractal->x_min, fractal->x_max);
+			z.i = map(y, HEIGHT, fractal->y_min, fractal->y_max);
 			if (is_mandelbrot)
 				iter = mandelbrot(z, fractal);
 			else
 				iter = julia(z, fractal);
-			draw_pixel(fractal, x, y, iter * fractal->color_shift);
+			draw_pixel(fractal, x, y, get_color(iter, fractal));
 			x++;
 		}
 		y++;

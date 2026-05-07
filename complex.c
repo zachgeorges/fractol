@@ -6,7 +6,7 @@
 /*   By: zgeorges <zgeorges@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 16:02:49 by zgeorges          #+#    #+#             */
-/*   Updated: 2026/05/06 16:10:21 by zgeorges         ###   ########.fr       */
+/*   Updated: 2026/05/07 11:42:46 by zgeorges         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,4 +29,3 @@ t_complex	sqr_cplx(t_complex z)
 	res.i = 2 * z.r * z.i;
 	return (res);
 }
-

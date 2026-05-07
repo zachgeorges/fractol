@@ -1,11 +1,44 @@
 *This project has been created as part of the 42 curriculum by zgeorges*
 
+---
+
+# push_swap
+
+## Description
+
+The `fract-ol` project involves creating graphically beautiful fractals. The goal is to provide student with an introduction to the MINILIBX graphics library, explore computer graphics optimization, and practice event handling.
+
+---
+
+## Instructions
+
+### Compilation
+
+### Usage
+
+### Memory Leaks Check
+
+---
+
+## Resources
+
+### References
+
+- [mlx guide by Oceano](https://github.com/suspectedoceano/mlx)
+- [mlx guide (video) by Oceano](https://www.youtube.com/watch?v=bYS93r6U0zg)
+- [mlx documentation](https://harm-smits.github.io/42docs/libs/minilibx)
+- [Xlib documentation](https://tronche.com/gui/x/xlib/)
+- [Geogebra mandelbrot](https://www.geogebra.org/m/mfewjrek)
+- [Geogebra julia](https://www.geogebra.org/m/ea2xgWmc)
+
+### AI usage
+
+Claude Code was used to suggest code optimizations, notably in looped per-pixel computing, as well as provide memory leak checking commands.
+
+---
 ## TODO
-- color.c, colors are iter * 1, need either color mapping function or a few colors for depths
-- parce.c, Necessary for handling julia parameters, will require ft_atof
-- error handling, init_fractal has no checks
-- optimization, zoom is slow
-- README.md
+
+
 - Makefile checks 
 - norm complicance
 
